@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import "./App.css"
+import Chart from './commponents/Chart'
 const App = () => {
   const [inputFileds,setInputFileds] = useState([])
   const handleAdd=()=>{
@@ -25,7 +26,7 @@ const App = () => {
   }
   return (
     <div>
-      <h2>Add Input Fields</h2>
+      {/* <h2>Add Input Fields</h2>
       <button onClick={handleAdd}>Add</button>
       {
         inputFileds.map((input,id)=>(
@@ -34,7 +35,8 @@ const App = () => {
           <button onClick={()=>(handleDelete(input.id))}>Delete</button>
           </div>
         ))
-      }
+      } */}
+      <Chart/>
     </div>
   )
 }
